@@ -41,3 +41,6 @@ pip install bless
 
 # Pi 2 安裝 bleak
 pip install bleak
+```
+
+https://docs.google.com/presentation/d/1faDDbLHu1SMCT8S2uNNkxtg0cNptN7nF9414DsZ6fO8/edit?usp=sharing
