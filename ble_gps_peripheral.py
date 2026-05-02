@@ -48,7 +48,7 @@ def make_telemetry() -> dict:
         "distance_dm": _distance_dm,                                      # 累積距離，0.1公尺
         "distance_m" : round(_distance_dm / 10.0, 1),                     # 累積距離，公尺
         "gps_valid"  : gps_valid,                                         # GPS 是否有效，1 正常、0 失效
-        "state"      : "GPS_LOST" if gps_valid == 0 else "TRACKING",
+        "state"      : "GPS_LOST" if gps_valid == 0 else "TRACKING",       # TRACKING 表示正常追蹤，GPS_LOST 表示 GPS 暫時失效
     }
 
 
