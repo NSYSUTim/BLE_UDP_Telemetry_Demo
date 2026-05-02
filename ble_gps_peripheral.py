@@ -42,12 +42,12 @@ def make_telemetry() -> dict:
     _distance_dm += max(1, speed_cmps // 10)
     gps_valid    = 0 if _seq % 20 in (15, 16, 17) else 1
     return {
-        "seq"        : _seq,
-        "speed_cmps" : speed_cmps,
-        "speed_mps"  : round(speed_cmps / 100.0, 2),
-        "distance_dm": _distance_dm,
-        "distance_m" : round(_distance_dm / 10.0, 1),
-        "gps_valid"  : gps_valid,
+        "seq"        : _seq,                                              # 第幾筆資料
+        "speed_cmps" : speed_cmps,                                        # 速度，公分/秒
+        "speed_mps"  : round(speed_cmps / 100.0, 2),                      # 速度，公尺/秒
+        "distance_dm": _distance_dm,                                      # 累積距離，0.1公尺
+        "distance_m" : round(_distance_dm / 10.0, 1),                     # 累積距離，公尺
+        "gps_valid"  : gps_valid,                                         # GPS 是否有效，1 正常、0 失效
         "state"      : "GPS_LOST" if gps_valid == 0 else "TRACKING",
     }
 
