@@ -1,6 +1,6 @@
 # Outdoor Telemetry Prototype: Hybrid BLE/UDP Testbench
 
-// 純粹看到面試就動手跑一下而已，沒甚麼技術含量。
+// 純粹看到面試及跑一下，無技術含量。
 
 這是一個基於 Raspberry Pi 實作的戶外穿戴式裝置通訊原型與自動化測試平台。本專案模擬了戶外 GPS 記錄器（Wearable Device）與手機端（Companion App）的資料同步流程，涵蓋裝置發現、狀態機模擬、即時資料傳輸與自動化測試產出。
 
